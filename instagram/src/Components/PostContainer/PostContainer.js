@@ -9,6 +9,7 @@ if (!props.data.length){
     <h3>Loading</h3>
     )
 }
+
 return(
     <>
         {props.data.map(posts=> (
@@ -37,7 +38,6 @@ return(
 
                     <div className="commentsSection">
                         <CommentSection comment={posts.comments}/>
-                        <input placeholder="Add Comment..."></input>
                     </div>
 
              </div> 

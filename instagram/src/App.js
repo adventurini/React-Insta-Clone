@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import dummyData from './dummy-data'
 import './App.css';
 import PostContainer from './Components/PostContainer/PostContainer'
+import SearchBar from './Components/SearchBar/SearchBar'
 
 class App extends Component {
   constructor(){
@@ -11,6 +12,15 @@ class App extends Component {
       data: dummyData
     }
   }
+
+  componentDidMount(){
+
+  }
+
+  searchFind(){
+
+  }
+
   
   render() {
     return (
@@ -21,7 +31,7 @@ class App extends Component {
         <span>|</span>
         <p>Instagram</p>
         </div>
-        <input placeholder="Search"></input>
+        <SearchBar searchInput='searchInput'/>
         <div className="tab icons">
         <i className="far fa-compass"></i>
         <i className="far fa-heart"></i>
