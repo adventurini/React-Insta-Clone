@@ -27,7 +27,7 @@ return(
                         <img></img>
                     </div>
                     <div comment-icons>
-                    <i class="far fa-heart"></i> <i class="far fa-comment"></i>
+                    <i className="far fa-heart"></i> <i className="far fa-comment"></i>
                     </div>
 
                     <div className="likes">
@@ -58,6 +58,10 @@ PostContainer.propTypes = {
         timestamp: PropTypes.string,
     }))
 };
+
+PostContainer.defaultProps= {
+    data:[]
+}
 
 
 export default PostContainer;

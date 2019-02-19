@@ -17,15 +17,15 @@ class App extends Component {
       <div className="App">
       <div className="search-bar">
       <div className="instabar">
-        <i class="fab fa-instagram"></i>
+        <i className="fab fa-instagram"></i>
         <span>|</span>
         <p>Instagram</p>
         </div>
         <input placeholder="Search"></input>
         <div className="tab icons">
-        <i class="far fa-compass"></i>
-        <i class="far fa-heart"></i>
-        <i class="far fa-user"></i>
+        <i className="far fa-compass"></i>
+        <i className="far fa-heart"></i>
+        <i className="far fa-user"></i>
         </div>
         
       </div>

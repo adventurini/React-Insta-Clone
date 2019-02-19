@@ -24,4 +24,8 @@ CommentSection.propTypes = {
         }))
 };
 
+CommentSection.defaultProps ={
+    comments: []
+}
+
 export default CommentSection;
