@@ -1,0 +1,16 @@
+.top{
+    display: flex;
+}
+
+.top img{
+    border-radius: 2rem;
+    width: 4rem;
+    height: 4rem;
+    margin-left: .5rem;
+    margin-top: .5rem;
+}
+
+.middle img{
+    width: 98%;
+    margin: .2rem;
+}
