@@ -15,8 +15,21 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <div className="search-bar">
+      <div className="instabar">
+        <i class="fab fa-instagram"></i>
+        <p>|</p>
+        <p>Instagram</p>
+        </div>
+        <input placeholder="Search"></input>
+        <div className="tab icons">
+        <i class="far fa-compass"></i>
+        <i class="far fa-heart"></i>
+        <i class="far fa-user"></i>
+        </div>
+        
+      </div>
         <PostContainer data={this.state.data} />
-
       </div>
     );
   }

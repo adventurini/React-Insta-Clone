@@ -11,7 +11,7 @@ if (!props.data.length){
 return(
     <>
         {props.data.map(posts=> (
-            <div key={posts.timestamp}>
+            <div className="post" key={posts.timestamp}>
 
                  <div className="top">
                     <img src={posts.thumbnailUrl} alt={`${posts.username}'s`}></img>
@@ -25,14 +25,18 @@ return(
                     <div className="buttons">
                         <img></img>
                     </div>
+                    <div comment-icons>
+                    <i class="far fa-heart"></i> <i class="far fa-comment"></i>
+                    </div>
 
                     <div className="likes">
-                        <p>Likes: {posts.likes}</p>
+                    
+                        <p>{posts.likes} likes</p> 
                     </div>
 
                     <div className="commentsSection">
                         <CommentSection comment={posts.comments}/>
-                        <input placeholder="Add Comment"></input>
+                        <input placeholder="Add Comment..."></input>
                     </div>
 
              </div> 

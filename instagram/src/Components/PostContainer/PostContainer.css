@@ -1,5 +1,10 @@
+.post{
+    text-align:left;
+}
+
 .top{
     display: flex;
+    margin-top: 2rem;
 }
 
 .top img{
@@ -7,10 +12,31 @@
     width: 4rem;
     height: 4rem;
     margin-left: .5rem;
-    margin-top: .5rem;
+    margin-right: .2rem;
+    margin-top: .25rem;
 }
 
 .middle img{
     width: 98%;
     margin: .2rem;
+    margin-top: 1rem;
 }
+
+.commentsSection input{
+    width: 96%;
+    margin-left:.25rem;
+    font-size: 1.1rem;
+    text-align: left;
+    border: .05px solid silver;
+    border-bottom: none;
+    border-right: none;
+    color: silver;
+    padding-top: .75rem;
+    padding-left: .5rem;
+  }
+
+  .likes{
+      font-weight: bold;
+      font-size: .92rem;
+      padding-top: .7rem;
+  }
