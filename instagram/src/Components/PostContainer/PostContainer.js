@@ -1,8 +1,9 @@
 import React from 'react';
 import CommentSection from '../CommentSection/CommentSection';
 import './PostContainer.css'
+import PropTypes from 'prop-types'
 
-function PostContainer(props) {
+const PostContainer= props=> {
 if (!props.data.length){
     return(
     <h3>Loading</h3>
@@ -47,7 +48,16 @@ return(
 
 )
         };
-    
+
+PostContainer.propTypes = {
+    data: PropTypes.arrayOf(PropTypes.shape({
+        username: PropTypes.string,
+        imageUrl: PropTypes.string,
+        thumbnailUrl: PropTypes.string,
+        likes: PropTypes.number,
+        timestamp: PropTypes.string,
+    }))
+};
 
 
 export default PostContainer;

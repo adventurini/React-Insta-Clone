@@ -33,24 +33,31 @@
 }
 
 input{
-  width: 10rem;
+  width: 9rem;
   text-align:center;
 }
 
 .search-bar{
   display:flex;
+  flex-wrap:nowrap;
   height: 1rem;
   justify-content:space-between;
 }
 
 .instabar{
   display:flex;
+  flex-wrap:nowrap;
   vertical-align: top;
 }
 
 p{
   margin-top:0;
   padding:0;
+  padding-left: 1rem;
+  padding-right:1rem;
+}
+
+span{
   padding-left: 1rem;
 }
 
@@ -67,3 +74,12 @@ i:hover{
   margin: .5rem;
 }
 
+.instabar p{
+  font-family:Pacifico;
+  font-size: .8rem;
+}
+
+tab icons{
+  display:flex;
+  flex-wrap: nowrap;
+}

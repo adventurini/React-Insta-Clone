@@ -18,7 +18,7 @@ class App extends Component {
       <div className="search-bar">
       <div className="instabar">
         <i class="fab fa-instagram"></i>
-        <p>|</p>
+        <span>|</span>
         <p>Instagram</p>
         </div>
         <input placeholder="Search"></input>
