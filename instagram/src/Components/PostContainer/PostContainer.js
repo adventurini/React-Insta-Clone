@@ -24,10 +24,10 @@ return(
                 </div>
 
                     <div className="buttons">
-                        <img></img>
+                        <img src='' alt=''></img>
                     </div>
-                    <div comment-icons>
-                    <i className="far fa-heart"></i> <i className="far fa-comment"></i>
+                    <div className='comment-icons'>
+                    <i className={`far fa-heart`}></i> <i className={`far fa-comment`}></i>
                     </div>
 
                     <div className="likes">

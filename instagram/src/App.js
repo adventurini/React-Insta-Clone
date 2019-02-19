@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import dummyData from './dummy-data'
 import './App.css';
 import PostContainer from './Components/PostContainer/PostContainer'
