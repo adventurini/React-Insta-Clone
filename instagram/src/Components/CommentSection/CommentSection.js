@@ -16,7 +16,8 @@ class CommentSection extends React.Component{
             text: this.state.text
         }
         this.setState({
-           comments: [...this.state.comments, newCommenter]
+           comments: [...this.state.comments, newCommenter],
+           text:''
         })
     }
 

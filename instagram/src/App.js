@@ -9,13 +9,17 @@ class App extends Component {
   constructor(){
     super();
     this.state={
-      data: dummyData
+      data: []
     }
   }
 
-  componentDidMount(){
+  // snapshot of current data on the state -- fill the key in the object with an empty//
 
-  }
+  componentDidMount(){
+    this.setState({
+      data: dummyData
+  })
+}
 
   searchFind(){
 

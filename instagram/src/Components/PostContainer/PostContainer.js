@@ -2,6 +2,7 @@ import React from 'react';
 import CommentSection from '../CommentSection/CommentSection';
 import './PostContainer.css'
 import PropTypes from 'prop-types'
+import Post from './Post'
 
 const PostContainer= props=> {
 if (!props.data.length){
@@ -14,7 +15,6 @@ return(
     <>
         {props.data.map(posts=> (
             <div className="post" key={posts.timestamp}>
-
                  <div className="top">
                     <img src={posts.thumbnailUrl} alt={`${posts.username}'s`}></img>
                     <h2>{posts.username}</h2>
@@ -27,15 +27,7 @@ return(
                     <div className="buttons">
                         <img src='' alt=''></img>
                     </div>
-                    <div className='comment-icons'>
-                    <i className={`far fa-heart`}></i> <i className={`far fa-comment`}></i>
-                    </div>
-
-                    <div className="likes">
-                    
-                        <p>{posts.likes} likes</p> 
-                    </div>
-
+                    <Post likes={posts.likes}/>
                     <div className="commentsSection">
                         <CommentSection comment={posts.comments}/>
                     </div>
