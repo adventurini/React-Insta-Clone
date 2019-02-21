@@ -4,6 +4,8 @@ import dummyData from './dummy-data'
 import './App.css';
 import PostContainer from './Components/PostContainer/PostContainer'
 import SearchBar from './Components/SearchBar/SearchBar'
+import authenticate from './Components/Authentication/authenticate'
+import LoginPage from './Components/Authentication/LoginPage'
 
 class App extends Component {
   constructor(){
@@ -49,4 +51,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default authenticate(App)(LoginPage);
