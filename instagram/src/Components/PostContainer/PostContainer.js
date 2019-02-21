@@ -2,7 +2,7 @@ import React from 'react';
 import CommentSection from '../CommentSection/CommentSection';
 import './PostContainer.css'
 import PropTypes from 'prop-types'
-import Post from './Post'
+import Likes from './Likes'
 
 const PostContainer= props=> {
 if (!props.data.length){
@@ -27,7 +27,7 @@ return(
                     <div className="buttons">
                         <img src='' alt=''></img>
                     </div>
-                    <Post likes={posts.likes}/>
+                    <Likes likes={posts.likes}/>
                     <div className="commentsSection">
                         <CommentSection comment={posts.comments}/>
                     </div>

@@ -2,8 +2,8 @@ import React from 'react';
 
 const SearchBar= props=> {
  return(
-<form onSubmit={props.searchFind}>
-        <input placeholder='Search'></input>
+<form>
+        <input onChange={props.searchHandler} placeholder='Search' value={props.searchInput}></input>
 </form>
  )
 }

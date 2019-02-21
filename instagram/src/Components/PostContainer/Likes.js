@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Post extends React.Component{
+class Likes extends React.Component{
 constructor(props){
     super(props);
     this.state= {
@@ -35,4 +35,4 @@ addLike = () => {
     }
 }
 
-export default Post
+export default Likes
