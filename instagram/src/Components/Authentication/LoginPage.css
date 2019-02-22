@@ -1,0 +1,22 @@
+.loginInput{
+    text-align:center;
+    width:40%;
+
+}
+
+.container{
+    margin-top: 20px;
+    width: 50%;
+    background-color:dodgerblue;
+    padding: 10px;
+}
+
+.form-control{
+    width:60%;
+    margin: 0 auto;
+    background-color: rgb(245, 159, 10);
+}
+
+.logo{
+    width: 80%;
+}

@@ -1,9 +1,11 @@
 import React from 'react';
 import PostContainer from './PostContainer';
 import SearchBar from '../SearchBar/SearchBar';
-import authenticate from '../Authentication/authenticate';
-import LoginPage from '../Authentication/LoginPage';
 import dummyData from '../../dummy-data';
+import igLogo from '../Authentication/ig_logo.svg';
+import './Post.css';
+import {SearchB} from '../../StyledComponents';
+import {InstaBar} from '../../StyledComponents'
 
 class PostPage extends React.Component{
     constructor(){
@@ -38,20 +40,21 @@ class PostPage extends React.Component{
     render() {
         return (
           <div className="App">
-          <div className="search-bar">
-          <div className="instabar">
+          <SearchB>
+          <InstaBar>
             <i className="fab fa-instagram"></i>
-            <span>|</span>
-            <p>Instagram</p>
-            </div>
+        <div id='logo'>
+            <img className='logo' src={igLogo} alt='Instagram Logo'></img>
+        </div>
+        </InstaBar>
             <SearchBar searchHandler={this.searchHandler} searchInput={this.searchInput}/>
             <div className="tab icons">
             <i className="far fa-compass"></i>
             <i className="far fa-heart"></i>
             <i className="far fa-user"></i>
             </div>
-            
-          </div>
+            </SearchB>
+          
             <PostContainer data={this.state.filteredUsers.length>0 ? this.state.filteredUsers : this.state.data} />
           </div>
         );

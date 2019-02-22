@@ -10,7 +10,7 @@ constructor(props){
 }
 
 addLike = () => {
-    if (this.state.likeToggle == false) {
+    if (this.state.likeToggle === false) {
         this.setState({ 
             likes: this.state.likes +1,
             likeToggle: true 
